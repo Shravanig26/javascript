@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Current Date and Time</title>
+</head>
+<body>
+    <h1>Display Current Date and Time</h1>
+    <button onclick="displayDate()">Show Date and Time</button>
+    <p id="dateDisplay"></p>
+
+    <script>
+        function displayDate() {
+            // Get the current date and time
+            const currentDate = new Date();
+
+            // Format the date and time as a readable string
+            const formattedDate = currentDate.toLocaleString();
+
+            // Display the date and time in the paragraph with id 'dateDisplay'
+            document.getElementById('dateDisplay').textContent = "Current Date and Time: " + formattedDate;
+        }
+    </script>
+</body>
+</html>
